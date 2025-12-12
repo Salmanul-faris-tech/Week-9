@@ -1,0 +1,61 @@
+1. ISP (Internet Service Provider)
+
+What it is:
+Your ISP is the company that gives you internet access (like Jio, Airtel, BSNL).
+
+How it works:
+Every internet request you make goes through your ISP.
+
+Role in privacy & security:
+
+ISPs can see your browsing activity, the websites you visit, and your IP address.
+
+They can track and log your data unless it’s encrypted.
+
+They provide no anonymity — your identity is directly linked to your IP.
+
+2. VPN (Virtual Private Network)
+
+What it is:
+A VPN creates an encrypted tunnel between your device and the internet.
+
+How it works:
+
+When you use a VPN, your traffic goes to a VPN server first, then to the internet.
+
+Your real IP is hidden, replaced with the VPN server’s IP.
+
+Role in privacy & security:
+
+Encrypts your data, so ISP, hackers, or public Wi-Fi attackers cannot see what you're doing.
+
+Hides your location and IP, improving anonymity.
+
+Protects you on public networks (cafés, airports).
+
+VPN provider can see your traffic, but a good provider does no logging.
+
+3. Proxy
+
+What it is:
+A proxy server acts as a middleman between you and the internet.
+
+How it works:
+
+Your requests go to the proxy, and the proxy fetches the data.
+
+Role in privacy & security:
+
+Hides your IP address, similar to VPN, but…
+
+No encryption (except HTTPS proxy).
+
+Mainly used for bypassing restrictions, not strong security.
+
+Good for accessing blocked websites, but not safe on public Wi-Fi.
+
+| Technology | Hides IP | Encrypts Data | Prevents ISP Tracking | Provides Strong Anonymity | Main Use                         |
+| ---------- | -------- | ------------- | --------------------- | ------------------------- | -------------------------------- |
+| **ISP**    | No       | No            | No                    | No                        | Provides internet                |
+| **VPN**    | Yes      | Yes           | Yes                   | Medium-High               | Privacy, security, safe browsing |
+| **Proxy**  | Yes      | No (mostly)   | No                    | Low-Medium                | Bypass blocks, basic anonymity   |
