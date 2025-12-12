@@ -1,0 +1,131 @@
+2. Research Encryption Protocols & IDS/IPS — Brief Explanation
+A. Encryption Protocols (SSL/TLS & IPsec)
+1. SSL/TLS
+
+SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are encryption protocols used to secure data traveling between a user and a website.
+
+How it works
+
+When you open a website with https://, SSL/TLS encrypts your data.
+
+It protects login details, credit card numbers, and personal information.
+
+Uses certificates to verify the server is genuine.
+
+Strengths
+
+Strong encryption.
+
+Widely used on the internet.
+
+Protects against eavesdropping and tampering.
+
+Provides authentication (server identity).
+
+Weaknesses
+
+If certificates are misconfigured or expired → insecure.
+
+Vulnerable if old versions (SSL 2.0, 3.0) are used.
+
+Relies on trust in Certificate Authorities.
+
+2. IPsec
+
+IPsec (Internet Protocol Security) is a protocol suite used to secure network traffic between devices (like between two offices, or a user and a VPN).
+
+How it works
+
+Works at the network layer.
+
+Encrypts all IP packets.
+
+Commonly used in VPNs.
+
+Provides:
+
+Encryption
+
+Authentication
+
+Integrity checking
+
+Strengths
+
+Very secure for site-to-site or remote VPNs.
+
+Protects all traffic, not just browser traffic.
+
+Works automatically without user interaction.
+
+Weaknesses
+
+Complex to configure.
+
+Requires compatible devices on both ends.
+
+Can reduce network performance due to heavy encryption.
+
+B. Intrusion Detection & Prevention Systems (IDS/IPS)
+
+IDS and IPS are cybersecurity tools that monitor network or system activity.
+
+1. IDS (Intrusion Detection System)
+What it does
+
+Monitors traffic or system activities.
+
+Detects suspicious/malicious behavior.
+
+Alerts the admin but does not block the attack.
+
+Types
+
+NIDS (Network IDS) – Monitors network traffic.
+
+HIDS (Host IDS) – Monitors individual devices.
+
+Features
+
+Detects malware, attack patterns, abnormal traffic.
+
+Uses signatures or behavior analysis.
+
+Generates alerts for investigations.
+
+Deployment Considerations
+
+Needs proper tuning to avoid false alarms.
+
+Should be placed where it can monitor network traffic effectively.
+
+Best used for monitoring, not blocking.
+
+2. IPS (Intrusion Prevention System)
+What it does
+
+Detects and blocks malicious activity automatically.
+
+Works inline with traffic (between user and network).
+
+Types
+
+Network IPS
+
+Host IPS
+
+Features
+
+Automatically blocks attacks.
+
+Prevents malware, port scans, DDoS, and exploit attempts.
+
+Can drop packets, reset connections, or quarantine devices.
+
+Deployment Considerations
+
+Must be placed inline → if IPS fails, traffic may be affected.
+
+Needs strong hardware to avoid slowing the network.
+
+Must be configured carefully to avoid blocking legitimate traffic.
