@@ -1,0 +1,133 @@
+1. IP Addressing, Subnetting, CIDR, and MAC Addresses
+a. IPv4 Addressing Scheme
+
+IPv4 (Internet Protocol version 4) uses a 32-bit address divided into four octets (like 192.168.1.10).
+It supports around 4.3 billion unique addresses.
+
+Types of IPv4 Addresses
+
+Public IP: Used on the internet.
+
+Private IP: Used inside local networks. Examples:
+
+10.0.0.0 – 10.255.255.255
+
+172.16.0.0 – 172.31.255.255
+
+192.168.0.0 – 192.168.255.255
+
+Loopback IP: 127.0.0.1 (used for testing your own machine)
+
+APIPA: 169.254.x.x (when DHCP fails)
+
+IPv6 Addressing Scheme
+
+IPv6 uses 128-bit addresses, written in hexadecimal (example: 2001:0db8:85a3::8a2e:0370:7334).
+It provides an extremely large number of addresses, solving IPv4 exhaustion.
+
+Benefits of IPv6
+
+More address space
+
+Built-in security (IPSec)
+
+Better routing
+
+No need for NAT
+
+Subnetting
+
+Subnetting means dividing a large network into smaller networks to:
+
+Improve security
+
+Reduce broadcast traffic
+
+Enhance network performance
+
+Example:
+If you have 192.168.1.0/24, subnetting into two gives:
+
+192.168.1.0/25
+
+192.168.1.128/25
+
+Each new network has fewer hosts, but more control and efficiency.
+
+CIDR Notation (Classless Inter-Domain Routing)
+
+CIDR uses a slash (/) to define how many bits are used for the network.
+
+Example:
+192.168.1.10/24
+
+/24 means first 24 bits = network,
+
+remaining 8 bits = hosts.
+
+CIDR helps:
+
+Reduce waste of IP addresses
+
+Create flexible subnet sizes
+
+Improve routing
+
+b. MAC Address
+
+A MAC address (Media Access Control) is a physical address burned into a network card.
+
+Example: A4:B1:C2:09:EF:67
+
+Features
+
+48-bit address
+
+Works on Layer 2 (Data Link Layer)
+
+Unique for every device
+
+ARP (Address Resolution Protocol)
+
+ARP maps IP addresses to MAC addresses inside a local network.
+
+Example:
+When your device wants to communicate with 192.168.1.5, it must ask:
+
+“Who has this IP? Tell me your MAC address!”
+
+ARP replies with the correct MAC.
+
+Why ARP exists?
+
+Because:
+
+IP works in Layer 3
+
+MAC works in Layer 2
+
+Devices need MAC to communicate inside LAN
+
+MAC Address Spoofing
+
+MAC spoofing means changing your MAC address temporarily or permanently.
+
+Why it is done?
+
+To bypass MAC filtering
+
+To impersonate another device
+
+For penetration testing
+
+For privacy in public Wi-Fi
+
+Security Risk
+
+Attackers can perform:
+
+ARP spoofing
+
+Man-in-the-middle attacks
+
+Network impersonation
